@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: github.samblake
+---
+testFramework: junit
+sourceLanguage: java
