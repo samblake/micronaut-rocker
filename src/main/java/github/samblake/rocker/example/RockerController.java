@@ -6,7 +6,6 @@ import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Produces;
 import io.micronaut.views.View;
 import io.micronaut.views.rocker.RockerWritable;
-import views.index;
 
 import static io.micronaut.core.util.CollectionUtils.mapOf;
 import static io.micronaut.http.HttpResponse.ok;
@@ -25,7 +24,7 @@ public class RockerController {
 	@Get("/static")
 	@Produces(TEXT_HTML)
 	public HttpResponse<?> staticTemplate() {
-		return ok(new RockerWritable(index.template("Static")));
+		return ok(new RockerWritable(views.index.template("Static")));
 	}
 
 }
